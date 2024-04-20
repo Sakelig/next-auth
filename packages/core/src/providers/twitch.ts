@@ -78,7 +78,7 @@ export default function Twitch(
     client: { token_endpoint_auth_method: "client_secret_post" },
     authorization: {
       params: {
-        scope: "openid user:read:email",
+        scope: "openid user:read:email user:read:follows",
         claims: {
           id_token: { email: null, picture: null, preferred_username: null },
         },
